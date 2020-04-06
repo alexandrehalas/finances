@@ -7,7 +7,7 @@ export class Entry {
     public name?: string,
     public description?: string,
     public type?: string,
-    public ammount?: string,
+    public amount?: string,
     public date?: string,
     public paid?: boolean,
     public categoryId?: number,

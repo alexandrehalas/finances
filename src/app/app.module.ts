@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CategoriesModule } from './pages/categories/categories.module';
+import { EntriesModule } from './pages/entries/entries.module';
 
 import { HttpClientModule } from '@angular/common/http';
 
@@ -18,6 +19,7 @@ import { InMemoryDataBase } from './in-memory-database';
     BrowserModule,
     AppRoutingModule,
     CategoriesModule,
+    EntriesModule,
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataBase)
   ],
