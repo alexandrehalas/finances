@@ -14,10 +14,10 @@ export class Entry {
     public category?: Category
   ) { }
 
-  static types = {
-    expense: 'Despesa',
-    renevue: 'Receita'
-  };
+  static types = [
+    {key: 'expense', value: 'Despesa'},
+    {key: 'renevue', value: 'Receita'},
+  ];
 
   get paidText(): string {
     return this.paid ? 'Pago' : 'Pendente';
