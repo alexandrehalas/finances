@@ -40,12 +40,12 @@
         {{entry.category.name}}
       </td>
       <td class="text-right">
-        <strong [class.text-sucess]="entry.type == 'renevue'" [class.text-danger]="entry.type == 'expense'">
+        <strong [class.text-success]="entry.type === 'revenue'" [class.text-danger]="entry.type === 'expense'">
           {{entry.amount}}
         </strong>
         <br>
         <span class="badge badge-light">
-          {{entry.paidText}}
+          {{entry.paid ? 'Pago': 'Pendente'}}
         </span>
       </td>
       <td class="text-center">

@@ -24,8 +24,7 @@ export class InMemoryDataBase implements InMemoryDbService {
         date: '05/04/2020',
         paid: true,
         categoryId: categories[0].id,
-        category: categories[0],
-        paidText: 'Pago'
+        category: categories[0]
       }
     ];
 

@@ -16,11 +16,7 @@ export class Entry {
 
   static types = [
     {key: 'expense', value: 'Despesa'},
-    {key: 'renevue', value: 'Receita'},
+    {key: 'revenue', value: 'Receita'},
   ];
-
-  get paidText(): string {
-    return this.paid ? 'Pago' : 'Pendente';
-  }
 
 }
