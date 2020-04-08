@@ -8,7 +8,6 @@ export abstract class BaseResourceListComponent<T extends BaseResourceModel> imp
   resources: T[] = [];
 
   constructor(
-    protected resourceModel: BaseResourceModel,
     protected resourceService: BaseResourceService<T>
   ) { }
 
@@ -19,7 +18,7 @@ export abstract class BaseResourceListComponent<T extends BaseResourceModel> imp
     );
   }
 
-  deleteCategory(resource: T) {
+  deleteResource(resource: T) {
 
     const mustDelete = confirm('Deseja realmente excluir este item?');
 
