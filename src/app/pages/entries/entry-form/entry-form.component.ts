@@ -137,7 +137,7 @@ export class EntryFormComponent implements OnInit, AfterContentChecked {
   }
 
   private createCategory() {
-    const entry: Entry = Object.assign(new Entry(), this.entryForm.value);
+    const entry: Entry = Entry.fromJson(this.entryForm.value);
     this.entryService.create(entry).subscribe(
       (createdCategory) => this.actionsForSuccess(createdCategory),
       (error) => this.actionsForError(error)
@@ -145,7 +145,7 @@ export class EntryFormComponent implements OnInit, AfterContentChecked {
   }
 
   private updateCategory() {
-    const entry: Entry = Object.assign(new Entry(), this.entryForm.value);
+    const entry: Entry = Entry.fromJson(this.entryForm.value);
     this.entryService.update(entry).subscribe(
       (createdCategory) => this.actionsForSuccess(createdCategory),
       (error) => this.actionsForError(error)

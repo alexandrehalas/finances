@@ -22,4 +22,8 @@ export class Entry extends BaseResourceModel {
     {key: 'revenue', value: 'Receita'},
   ];
 
+  static fromJson(jsonData: any): Entry {
+    return Object.assign(new Entry(), jsonData);
+  }
+
 }
