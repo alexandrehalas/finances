@@ -12,8 +12,6 @@ import { BaseResourceFormComponent } from 'src/app/shared/forms/base-resource-fo
 })
 export class CategoryFormComponent extends BaseResourceFormComponent<Category> {
 
-  category: Category = new Category();
-
   constructor(
     protected categoryService: CategoryService,
     protected injector: Injector
