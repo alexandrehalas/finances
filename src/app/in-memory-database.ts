@@ -21,11 +21,77 @@ export class InMemoryDataBase implements InMemoryDbService {
         description: 'description',
         type: 'expense',
         amount: '200,00',
-        date: '05/04/2020',
+        date: '05/01/2020',
         paid: true,
         categoryId: categories[0].id,
         category: categories[0]
-      }
+      },
+      {
+        id: 2,
+        name: 'Luz',
+        description: 'description',
+        type: 'expense',
+        amount: '100,00',
+        date: '05/01/2020',
+        paid: true,
+        categoryId: categories[0].id,
+        category: categories[0]
+      },
+      {
+        id: 3,
+        name: 'Água',
+        description: 'description',
+        type: 'expense',
+        amount: '70,00',
+        date: '05/01/2020',
+        paid: true,
+        categoryId: categories[0].id,
+        category: categories[0]
+      },
+      {
+        id: 4,
+        name: 'Projeto Angular',
+        description: 'description',
+        type: 'revenue',
+        amount: '500,00',
+        date: '20/01/2020',
+        paid: true,
+        categoryId: categories[4].id,
+        category: categories[4]
+      },
+      {
+        id: 5,
+        name: 'Cinema',
+        description: 'description',
+        type: 'expense',
+        amount: '30,00',
+        date: '10/01/2020',
+        paid: true,
+        categoryId: categories[2].id,
+        category: categories[2]
+      },
+      {
+        id: 6,
+        name: 'Salário',
+        description: 'description',
+        type: 'revenue',
+        amount: '1000,00',
+        date: '12/01/2020',
+        paid: true,
+        categoryId: categories[3].id,
+        category: categories[3]
+      },
+      {
+        id: 7,
+        name: 'Remédios',
+        description: 'description',
+        type: 'expense',
+        amount: '225,00',
+        date: '15/01/2020',
+        paid: true,
+        categoryId: categories[1].id,
+        category: categories[1]
+      },
     ];
 
     return { categories, entries };
